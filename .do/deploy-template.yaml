@@ -9,7 +9,7 @@
 
 services:
   - name: auth-ms-build
-    dockerfile_path: dockerfile.prod
+    dockerfile_path: ../dockerfile.prod
     source_dir: /
     environment_slug: node-js
     instance_size_slug: basic-xxs
