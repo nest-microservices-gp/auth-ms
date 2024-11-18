@@ -1,0 +1,15 @@
+# Este archivo especifica los argumentos que debe seguir
+# el App Platform de Digital Ocean para construir y
+# desplegar la imagen de este microservicio.
+# - name: nombre del servicio.
+# - dockerfile_path: archivo docker para build y deploy.
+# - source_dir: ruta de la raíz.
+# - environment_slug: entorno de ejecución de la app.
+# - insstance_size_slug: tamaño de la instancia que correrá la app.
+
+services:
+  - name: auth-ms-build
+    dockerfile_path: dockerfile.prod
+    source_dir: /
+    environment_slug: node-js
+    instance_size_slug: basic-xxs
